@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>JQuery/Javascript Calculator FCC</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!--importing google's api fonts Oswald and Prompt-->
+<link href="https://fonts.googleapis.com/css?family=Oswald|Prompt" rel="stylesheet">
+<!--text-center is bootstrap class that centers your text-->
+<div class="text-center">
+  <!--Title of our page-->
+  <h1>jQuery Calculator Free Code Camp</h1>
+  <!--h2 will help promote me for those that come across this codepen -->
+  <h2>By: apalm1341/Aaron</h2>
+</div>
+<!--For the top-rounded part of my calculator..this will be for later on when we will be outputting our data..this div will do the styling aspects within here-->
+<div class="">
+  
+  <!--horizontal rule/line for styling-->
+ <hr style="height:5px" class="style17">
+  </hr
+<br>
+  <hr class="style18">
+</div>
+<div id="calcOutput">
+  <!--this will be targeted later on-->
+  <span id="steps">0</span>
+  <!--hr creates horizontal black thin line below the 0-->
+  <hr/>
+  
+</div>
+<!--this will be the grey part of the calculator..the bulk of where all the buttons are..will be using line breaks instead of rows or columns..gave it an id so that we can do the CSS and target it in our JQUERY-->
+<div class="text-center" id="calculator">
+  <!--create our buttons..all the buttons are the same except the first two cause we make them red just to stand out to delete things..so gonna use anchor tags and we r gonna use a class that is defined in bootstrap = btn btn-danger..each of these need id so that we can target them in our jquery-->
+  <!--this will be our AC button that will delete all the values in our calculator in there to that point so that we can start fresh if we make a mistake-->
+  <a class="btn btn-danger" id="deleteAll">AC</a>
+  <!--same thing as above with this backOne id or basically to just go back a step.. -->
+  <a class="btn btn-danger" id="backOne">CE</a>
+  <!---->
+  <a class="btn btn-primary" id="/">/</a>
+  <a class="btn btn-primary" id="*">*</a>
+  <!--line break-->
+  <br/>
+  
+  <!--next line section starts below!-->
+  <a class="btn btn-primary" id="7">7</a>
+  <a class="btn btn-primary" id="8">8</a>
+  <a class="btn btn-primary" id="9">9</a>
+  <a class="btn btn-primary" id="-">-</a>
+  <!--another line break-->
+  <br/>
+  <a class="btn btn-primary" id="4">4</a>
+  <a class="btn btn-primary" id="5">5</a>
+  <a class="btn btn-primary" id="6">6</a>
+  <a class="btn btn-primary" id="+">+</a>
+  <br/>
+  <a class="btn btn-primary" id="1">1</a>
+  <a class="btn btn-primary" id="2">2</a>
+  <a class="btn btn-primary" id="3">3</a>
+  <a class="btn btn-primary" id=".">.</a>
+  <br/>
+  <!--class below = btn btn-primary and custom class = bigButton-->
+  <a class="btn btn-primary bigButton" id="0">0</a>
+  <!--class below = btn btn-primary and custom class=bigButton-->
+  <a class="btn btn-primary bigButton" id="total">=</a>
+
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
